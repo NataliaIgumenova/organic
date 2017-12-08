@@ -1,0 +1,133 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    height: 930px;
+    padding: 0;
+    margin: 0;
+    background-image: url('images/Slide.jpg');
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+footer{
+    background-image: url('images/fon.jpg');
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: repeat;
+    height: 474px;
+}
+
+.conteiner{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+menu{
+    display: flex;
+    width: 637px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 53px;
+}
+main{
+    height: 445px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-size: 52px;
+    line-height: 62px;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 170px;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5)
+}
+h2{
+    font-size: 24px;
+    line-height: 24px;
+    color: #fe992a;
+    font-weight: 400;
+    margin: 0;
+}
+h3{
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 40px;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5)
+}
+.menu-item{
+    position: relative;
+}
+.menu-item::after{
+    content: "";
+    background-size: 100%;
+    background-image: url("images/arrow.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 5px;
+    height: 4px;
+    top: 10px;
+    right: -15px;
+}
+.quote-item{
+    width: 267px
+}
+.quote{
+    font-size: 20px;
+    line-height: 28px;
+    color: #fe992a;
+    font-style: italic;
+}
+.text-item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #737c85;
+}
+
+.header-text{
+    width: 395px;
+}
+.img-logo{
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    margin: 25px;
+}
+.information{
+    width: 590px;
+}
+
+.footer-items{
+    display: flex;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.footer-item{
+    font-weight: 600;
+}
+.footer-address{
+    padding-top: 39px;
+}
