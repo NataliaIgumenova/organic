@@ -4,10 +4,13 @@ body{
     font-family: 'Lato', sans-serif;
 }
 header{
-    height: 930px;
+    height: 1090px;
     padding: 0;
     margin: 0;
     background-image: url('images/Slide.jpg');
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
     background-position: 0 0;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -87,13 +90,37 @@ h3{
     right: -15px;
 }
 .quote-item{
-    width: 267px
+    width: 281px
 }
 .quote{
     font-size: 20px;
     line-height: 28px;
     color: #fe992a;
     font-style: italic;
+    position: relative;
+    margin: 0;
+}
+.quote::before{
+    content: "";
+    background-size: 100%;
+    background-image: url("images/quotation-up.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    top: -20px;
+    left: 0px;
+}
+.quote::after{
+    content: "";
+    background-size: 100%;
+    background-image: url("images/quotation-down.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    bottom: -20px;
+    left: 77px;
 }
 .text-item{
     font-family: Arial, Helvetica, sans-serif;
